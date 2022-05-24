@@ -229,6 +229,7 @@ function bouton_pan(){
 function ajout_panier(){
 
     quantite = document.getElementById('qte').value;
+    if((quantite == null)||(quantite == 0)) quantite = 1; 
     coul = document.getElementById('clr').value;
     prix = document.getElementById('up').innerHTML;
     nprod = document.getElementById('lib').innerHTML;
