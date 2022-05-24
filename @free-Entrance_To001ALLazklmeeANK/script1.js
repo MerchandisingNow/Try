@@ -204,7 +204,7 @@ function increment(n){
 
 function bouton_pan(){
     m = localStorage.getItem("total_p");
-    if(m != "0"){
+    if((m != "0")&&(m != null)){
         notif=`
             <a href="panier.html" class="button_link" id="but_pan">
                 <button class="button_nav"><a href="panier.html" class="panier_link" title="Cliquez pour accéder à votre panier "><span class="emoji_panier">🗑</span> panier
